@@ -1,0 +1,321 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-ccw {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-image-cw {
+    transform: rotate(30deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-linear-cold {
+    background: linear-gradient(blue, purple);
+    width: 220px;
+    height: 200px;
+    color: white;
+}
+
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial-hot {
+    background: radial-gradient(white, red);
+    width: 150px;
+    height: 280px;
+}
+
+.gradients-positioned {
+    background:
+            radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.gradients-positioned-down {
+    background:
+            radial-gradient(at bottom, yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+
+
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.animation-keyframes-myturn {
+    position: relative;
+    top: 0px;
+    animation-duration: 5s;
+    animation-name: myturn;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+}
+
+@keyframes myturn {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 300%;
+        margin-right:100%;
+        width: 600px;
+        height: 600px;
+        background-color: red;
+        color: black;
+    }
+
+
+    50% {
+        position: relative;
+        top: 300px;
+        font-size: 200%;
+        margin-left: 50%;
+        width: 400px;
+        height: 400px;
+        background-color: purple;
+        color: gray;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        color: white;
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.flex-box-4 {
+    background-color: purple;
+    color: white;
+}
+
+.flex-box-5 {
+    background-color: green;
+    color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.end {
+    display: flex;
+    justify-content: end;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.vert-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.double-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stretch {
+    display: flex;
+}
+
+.stretch > .flex-box {
+    flex-basis: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: white;
+        color: saddlebrown;
+        font-weight: lighter;
+    }
+    .media-query {
+        background-color: black;
+        color: red;
+    }
+    .some-headers {
+        color: blue;
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: orange;
+        color: black;
+    }
+    .media-query {
+        background-color: yellowgreen;
+        color: black;
+    }
+    .some-headers {
+        font-style: italic;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1500px) { /* shrank the max size here so page is easily visible fullscreen */
+    body {
+        background-color: purple;
+        color: white;
+    }
+    .media-query {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    .some-headers {
+        background: blue;
+        color: yellow;
+    }
+}
