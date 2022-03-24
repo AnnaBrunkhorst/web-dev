@@ -10,7 +10,7 @@ const TodoList = () => {
 }
 export default TodoList;
 
-import TodoItem from "./TodoItem.js";
+import TodoItem from "./todo-item.js";
 const TodoList = () => {
   return(`
         <ul>

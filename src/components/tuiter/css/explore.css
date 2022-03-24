@@ -1,0 +1,219 @@
+.wd-black-bg {
+    background-color: black;
+}
+
+.wd-dark-gray-bg {
+    background-color: rgb(47, 51, 54);
+}
+
+.wd-white-fg {
+    color: white;
+}
+
+.wd-gray-fg {
+    color: rgb(110,118,125);
+}
+
+.wd-blue-fg {
+    color: rgb(29,161,242);
+}
+
+.wd-bold {
+    font-weight: bold;
+}
+
+.wd-normal {
+    font-weight: normal;
+}
+
+.wd-left-margin {
+    margin-left: 16px;
+}
+
+.wd-top-margin {
+    margin-top: 16px;
+}
+
+.wd-right-margin {
+    margin-right: 12px;
+}
+
+.wd-remove-margins {
+    margin: 0px;
+}
+
+.wd-rounded-corners {
+    border-radius: 20px;
+}
+
+.wd-rounded-corners-30 {
+    border-radius: 30px;
+}
+
+.wd-rounded-corners-50 {
+    border-radius: 50px;
+}
+
+.wd-search-bar {
+    width: 80%;
+    height: 32px;
+    border: rgb(47, 51, 54);
+}
+
+.wd-search-bar-inside {
+    width: 90%;
+    border: rgb(47, 51, 54);
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-row {
+    clear: both;
+}
+
+.wd-15px-font {
+    font-size: 15px;
+}
+
+.wd-13px-font {
+    font-size: 13px;
+}
+
+.wd-padded {
+    padding: 16px;
+}
+
+.wd-padded-less {
+    padding: 8px;
+}
+
+.wd-padded-less-bottom {
+    padding: 16px 16px 10px 16px;
+}
+
+.wd-padded-left {
+    padding-left: 16px;
+}
+
+.wd-blue-bottom-border {
+    border-width: 0px 0px 6px 0px;
+    border-style: solid;
+    border-color: rgb(29,161,242);
+}
+
+.wd-dark-gray-border {
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-dark-gray-border-sides {
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-width-100perc {
+    width: 100%;
+}
+
+.wd-full-width {
+    width: calc(100% - 32px);
+}
+
+.wd-full-width-minus-pic {
+    width: calc(100% - 164px);
+}
+
+.wd-40-by-40 {
+    height: 40px;
+    width: 40px;
+}
+
+.wd-100-by-100 {
+    height: 100px;
+    width: 100px;
+}
+
+.wd-50-by-50 {
+    height: 50px;
+    width: 50px;
+}
+
+.wd-list-group-bs-override {
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    border-width: 0px;
+}
+
+.wd-list-group-bs-override.active {
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    border-width: 0px;
+    border: black;
+}
+
+.wd-list-group-bs-override:hover {
+    background-color: rgb(47, 51, 54);
+    color: white;
+    font-size: x-large;
+    border-width: 0px;
+}
+
+.wd-list-group-bs-override.disabled {
+    background-color: black;
+    color: rgb(110,118,125);
+    font-size: x-large;
+    border-width: 0px;
+}
+
+.wd-button-bs-override {
+    background-color: rgb(29,161,242);
+    color: white;
+    font-size: x-large;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.wd-button-bs-override-white {
+    background-color: white;
+    color: black;
+    font-size: large;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.wd-text-on-image {
+    position: relative;
+    bottom: 64px;
+    left: 16px;
+}
+
+.wd-absolute {
+    position: absolute;
+    right: 0%;
+    top: 16px;
+}
+
+.wd-vert-center {
+    align-items: center;
+    position: relative
+}
+
+.wd-no-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.wd-no-text-deco {
+    text-decoration: none;
+}

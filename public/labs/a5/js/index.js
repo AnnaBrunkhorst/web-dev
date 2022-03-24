@@ -282,6 +282,5 @@ const init = () => {
   hideBtn.click(hideHandler);
   showBtn.click(showHandler);
 
-
 }
 $(init);
