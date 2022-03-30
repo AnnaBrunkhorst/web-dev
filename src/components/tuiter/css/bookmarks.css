@@ -26,6 +26,10 @@
     margin-left: 80px;
 }
 
+.wd-left-margin-560 {
+    margin-left: 560px;
+}
+
 .wd-top-bottom-margin {
     margin-top: 12px;
     margin-bottom: 12px;
@@ -92,6 +96,10 @@
 .wd-rounded-bottom-corners {
     border-bottom-left-radius: 48px;
     border-bottom-right-radius: 48px;
+}
+
+.wd-width-554 {
+    width: 554px;
 }
 
 .wd-width-506 {
