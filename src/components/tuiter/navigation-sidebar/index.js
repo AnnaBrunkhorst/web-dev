@@ -9,11 +9,11 @@ const NavigationSidebar = (
   return(
       <>
             <div className="list-group">
-                <a className="list-group-item" href="../HomeScreen/home.html">
+                <a className="list-group-item" href="../HomeScreen/oldHome.html">
                     <i className="fab fa-twitter"></i></a>
-                <a className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="../../../../tuiter/HomeScreen/home.html">
+                <a className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="../../../../tuiter/HomeScreen/oldHome.html">
                     <i className="fas fa-home"></i> Home</a>
-                <a className={`list-group-item ${active === 'explore' ? 'active' : ''}`} href="../ExploreScreen/explore.html">
+                <a className={`list-group-item ${active === 'explore' ? 'active' : ''}`} href="../ExploreScreen/oldExplore.html">
                     <i className="fas fa-hashtag"></i> Explore</a>
                 <a className={`list-group-item ${active === 'notifications' ? 'active' : ''}`} href="../notifications.html">
                     <i className="far fa-bell"></i> Notifications</a>
@@ -23,7 +23,7 @@ const NavigationSidebar = (
                     <i className="far fa-bookmark"></i> Bookmarks</a>
                 <a className={`list-group-item ${active === 'lists' ? 'active' : ''}`} href="../lists.html">
                     <i className="far fa-list-alt"></i> Lists</a>
-                <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="../profile.html">
+                <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="../oldProfile.html">
                     <i className="far fa-user"></i> Profile</a>
                 <a className={`list-group-item ${active === 'more' ? 'active' : ''}`} href="../more.html">
                     <i className="fas fa-ellipsis-h"></i> More</a>
