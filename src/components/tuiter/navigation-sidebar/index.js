@@ -19,7 +19,7 @@ const NavigationSidebar = (
                     <i className="far fa-bell"></i> Notifications</a>
                 <a className={`list-group-item ${active === 'messages' ? 'active' : ''}`} href="../messages.html">
                     <i className="far fa-envelope"></i> Messages</a>
-                <a className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`} href="../bookmarks.html">
+                <a className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`} href="../oldBookmarks.html">
                     <i className="far fa-bookmark"></i> Bookmarks</a>
                 <a className={`list-group-item ${active === 'lists' ? 'active' : ''}`} href="../lists.html">
                     <i className="far fa-list-alt"></i> Lists</a>
@@ -29,7 +29,7 @@ const NavigationSidebar = (
                     <i className="fas fa-ellipsis-h"></i> More</a>
             </div>
             <div className="d-grid mt-2">
-                <a href="../tuit.html"
+                <a href="../oldTuit.html"
                    className="btn btn-primary btn-block rounded-pill">
                     Tuit</a>
             </div>

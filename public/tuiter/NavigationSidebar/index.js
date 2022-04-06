@@ -15,7 +15,7 @@ const NavigationSidebar = (active) => {
       : ''}" href="../messages.html">
                     <i class="far fa-envelope"></i>&nbsp Messages</a>
                 <a class="list-group-item ${active == 'bookmarks' ? 'active'
-      : ''}" href="../bookmarks.html">
+      : ''}" href="../oldBookmarks.html">
                     <i class="far fa-bookmark"></i>&nbsp Bookmarks</a>
                 <a class="list-group-item ${active == 'lists' ? 'active' : ''}" href="../lists.html">
                     <i class="far fa-list-alt"></i>&nbsp Lists</a>
@@ -25,7 +25,7 @@ const NavigationSidebar = (active) => {
                     <i class="fas fa-ellipsis-h"></i>&nbsp More</a>
             </div>
             <div class="d-grid mt-2">
-                <a href="../tuit.html"
+                <a href="../oldTuit.html"
                    class="btn btn-primary btn-block rounded-pill">
                     Tuit</a>
             </div>
