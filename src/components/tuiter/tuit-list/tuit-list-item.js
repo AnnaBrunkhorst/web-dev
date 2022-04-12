@@ -1,6 +1,7 @@
 import React from "react";
 import YouTube from "react-youtube";
 import {useDispatch} from "react-redux";
+import {deleteTuit, updateTuit} from "../actions/tuits-actions";
 
 const vid = (id) => {
   if (id != "") {
@@ -71,12 +72,60 @@ const TuitListItem = (
       }
     }) => {
       const dispatch = useDispatch();
-      const deleteTuit = (post) => {
-        dispatch({type: 'delete-tuit', post})
-      };
+      // const deleteTuit = (post) => {
+      //   dispatch({type: 'delete-tuit', post})
+      // };
       const likeTuit = () => {
-        dispatch({type: 'like-tuit', post});
+        // dispatch({type: 'like-tuit', post});
+        if (post.liked) {
+          updateTuit(dispatch, {
+            ...post,
+            stats: {
+              comments: post.stats.comments,
+              retuits: post.stats.retuits,
+              likes: post.stats.likes - 1,
+              dislikes: post.stats.dislikes
+            },
+            liked: false
+          })
+        } else {
+          updateTuit(dispatch, {
+            ...post,
+            stats: {
+              comments: post.stats.comments,
+              retuits: post.stats.retuits,
+              likes: post.stats.likes + 1,
+              dislikes: post.stats.dislikes
+            },
+            liked: true
+          })
+        }
       };
+  const dislikeTuit = () => {
+    if (post.disliked) {
+      updateTuit(dispatch, {
+        ...post,
+        stats: {
+          comments: post.stats.comments,
+          retuits: post.stats.retuits,
+          likes: post.stats.likes,
+          dislikes: post.stats.dislikes - 1,
+        },
+        disliked: false
+      })
+    } else {
+      updateTuit(dispatch, {
+        ...post,
+        stats: {
+          comments: post.stats.comments,
+          retuits: post.stats.retuits,
+          likes: post.stats.likes,
+          dislikes: post.stats.dislikes + 1,
+        },
+        disliked: true
+      })
+    }
+  };
 
       return (
           <>
@@ -90,9 +139,12 @@ const TuitListItem = (
                 <br/>
                 {post.tuit}
               </p>
-              <i onClick={() =>
-                  deleteTuit(post)}
-                 className="fas fa-times wd-white-fg wd-float-right"></i>
+              <i className="fas fa-times wd-white-fg wd-float-right"
+                 onClick={() => deleteTuit(
+                     dispatch, post)}></i>
+              {/*<i onClick={() =>*/}
+              {/*    deleteTuit(post)}*/}
+              {/*   className="fas fa-times wd-white-fg wd-float-right"></i>*/}
             </div>
 
             {}
@@ -121,6 +173,19 @@ const TuitListItem = (
               }
               {post.stats && <p
                   className="wd-float-left wd-left-margin-12 wd-gray-fg">{post.stats.likes}</p>}
+              </span>
+              <span onClick={dislikeTuit}>
+              {
+                post.disliked &&
+                <i className="fas fa-thumbs-down wd-float-left wd-left-margin-80"
+                   style={{color: 'deepskyblue'}}></i>
+              }
+                {
+                  !post.disliked &&
+                  <i className="fas fa-thumbs-down wd-float-left wd-left-margin-80 wd-gray-fg"></i>
+                }
+                {post.stats && <p
+                    className="wd-float-left wd-left-margin-12 wd-gray-fg">{post.stats.dislikes}</p>}
               </span>
               <a href="#">
                 <i className="fas fa-upload wd-float-left wd-left-margin-80 wd-gray-fg"></i>

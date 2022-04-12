@@ -1,10 +1,8 @@
 import React, {useEffect} from "react";
-// import tuits from "../data/tuits.json";
 import {useDispatch, useSelector}
   from "react-redux";
-//import * as service
-//  from '../../../full-stack-developer/services/tuits-service';
-import {findAllTuits} from
+// import * as service from "../services/tuits-service"
+import {deleteTuit, findAllTuits} from
       "../actions/tuits-actions";
 import TuitListItem
   from "./tuit-list-item";
@@ -24,15 +22,12 @@ const TuitList = () => {
   // }
   // useEffect(findAllTuits, []);
   useEffect(() =>
-          findAllTuits(dispatch),
-      []);
+  findAllTuits(dispatch),
+  []);
   // findAllTuits list item below is just an attempt to see if any tuits are being retrieved
   // at all; the only list item that shows on the site is [object Promise], so probably not
   return (
       <ul className="ttr-tuits list-group">
-        <li>
-          {findAllTuits().toString()}
-        </li>
         {
           tuits.map && tuits.map(post =>
               <TuitListItem key={post.id}
